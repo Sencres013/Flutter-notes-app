@@ -13,11 +13,26 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       systemOverlayStyle: SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
       ),
-      title: Text("Your notes"),
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Icon(
+            Icons.menu,
+            color: fgColor,
+            size: 30,
+          ),
+          Text("Notes"),
+          Icon(
+            Icons.settings,
+            color: fgColor,
+            size: 30,
+          )
+        ],
+      ),
       titleTextStyle: TextStyle(
         color: fgColor,
-        fontSize: 40,
-      )
+        fontSize: 20,
+      ),
     );
   }
 
