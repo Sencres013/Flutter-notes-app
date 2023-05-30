@@ -8,6 +8,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(),
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ]
+        )
+      )
     );
   }
 }
