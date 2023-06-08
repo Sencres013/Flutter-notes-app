@@ -9,11 +9,14 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(),
       body: SafeArea(
-        child: Column(
+        child: ListView(
+          padding: EdgeInsets.symmetric(vertical: 10),
           children: [
-            
-          ]
-        )
+            Center(child: Text("a")),
+            Center(child: Text("b")),
+            Center(child: Text("c")),
+          ],
+        ),
       )
     );
   }
