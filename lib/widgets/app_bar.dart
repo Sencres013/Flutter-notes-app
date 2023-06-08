@@ -16,17 +16,27 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(
-            Icons.menu,
-            color: fgColor,
-            size: 30,
+          IconButton(
+            padding: EdgeInsets.zero,
+            constraints: BoxConstraints(),
+            icon: Icon(
+              Icons.menu,
+              color: fgColor,
+            ),
+            iconSize: 30,
+            onPressed: () {},
           ),
           Text("Notes"),
-          Icon(
-            Icons.settings,
-            color: fgColor,
-            size: 30,
-          )
+          IconButton(
+            padding: EdgeInsets.zero,
+            constraints: BoxConstraints(),
+            icon: Icon(
+              Icons.settings,
+              color: fgColor,
+            ),
+            iconSize: 30,
+            onPressed: () {},
+          ),
         ],
       ),
       titleTextStyle: TextStyle(
