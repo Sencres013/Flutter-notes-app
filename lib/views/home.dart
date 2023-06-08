@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "../widgets/app_bar.dart";
 import "../widgets/note_preview.dart";
+import "../models/note.dart";
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -12,8 +13,8 @@ class Home extends StatelessWidget {
       body: SafeArea(
         child: ListView(
           children: [
-            NotePreview(),
-            NotePreview(),
+            NotePreview(note: Note(title: "lorem ipsum", body: "lorem ipsum")),
+            NotePreview(note: Note(title: "lorem ipsum", body: "lorem ipsum")),
           ],
         ),
       ),

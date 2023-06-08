@@ -3,7 +3,7 @@ class Note {
   String? body;
   int? id;
 
-  Note({ required this.title, required this.body }) {
+  Note({required this.title, required this.body}) {
     id = DateTime.now().millisecondsSinceEpoch;
   }
 }
